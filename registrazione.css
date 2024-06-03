@@ -1,0 +1,179 @@
+body{
+    margin: 0px;
+    font-family: "Poppins", Helvetica;
+    font-size: 19px;
+    color: #090904;
+    text-align: center;
+    font-weight: 500;
+}
+
+h2{
+    font-family: "Elsie Swash Caps", Helvetica;
+    color: #006678;
+    font-size: 51px; 
+    margin: 0;
+}
+
+p.registrazione{
+    margin: 0 0 15px 0;
+}
+
+.registrazione a{
+    color: #006678;
+}
+
+.registrazione a:hover{
+    color: rgb(110, 194, 222);
+}
+
+#login{
+    height: 100vh;
+    display: flex;
+    background-image: url("immagini/blu.jpg");
+    background-size: cover;
+    background-position: left;
+    justify-content: flex-end;
+}
+
+.rrr{
+    padding: 2% 5%;
+}
+
+.name, .surname, .username, .email, .password, .confirm_password{
+    width: 100%;
+    font-size: 18px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+
+div.riga{
+    display: flex;
+}
+
+#logo{
+    position: relative;
+    left: -20px;
+    top: 10px;
+    width: 600px;
+}
+
+div#blocco{
+    padding: 0;
+    background-color: #006678;
+    box-shadow: 0px 8px 16px 0px rgba(0, 92, 99, 0.382);
+    border: 1px solid #006678;
+    border-radius: 10px;
+    width: 97%;
+}
+
+label {
+    text-align: left;
+    margin: 5px 0 5px 0;
+    color: white;
+}
+  
+input{
+    margin-left: 0.5em;
+}
+
+input[type='submit']{
+    color: white;
+    border: 0;
+    padding: 4px 8px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(110, 194, 222);
+    cursor: pointer;
+    font-family: "Poppins", Helvetica;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+form span {
+    opacity: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    transition: opacity 0.3s ease;
+}
+
+.errorj label {
+    color: #d01b2d;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 14px;
+    color: #d01b2d;
+}
+
+.errorj input{
+    border-color: #d01b2d;
+}
+
+@media (max-width: 750px){
+    body, label{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    #login{
+        justify-content: center;
+    }
+
+    div#blocco{
+        padding: 0;
+    }
+}
+
+@media (max-width: 630px){
+    div.riga{
+        flex-direction: column;
+    }
+
+    #logo{
+        left: -7px;
+        top: 6px;
+        width: 290px;
+    }
+
+    div#blocco{
+        width: 60%;
+    }
+
+    .rrr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    #login img{
+        position: relative;
+        left: -5px;
+        top: 3px;
+        width: 280px;
+    }
+
+    input[type='submit']{
+        padding: auto;
+        margin-left: 68px;
+    }
+
+    label{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input{
+        margin-left: 0;
+    }
+}

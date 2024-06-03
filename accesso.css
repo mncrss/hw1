@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    font-family: "Poppins", Helvetica;
+    font-size: 19px;
+    color: #090904;
+    text-align: center;
+    font-weight: 500;
+}
+
+h2{
+    font-family: "Elsie Swash Caps", Helvetica;
+    color: #006678;
+    font-size: 51px; 
+    margin: 0;
+    text-shadow: 2px 2px 2px white;
+}
+
+p.registrazione{
+    margin: 0 0 15px 0;
+}
+
+.registrazione a{
+    color: #006678;
+}
+
+.registrazione a:hover{
+    color: rgb(110, 194, 222);
+}
+
+#accesso{
+    height: 100vh;
+    display: flex;
+    background-image: url("immagini/oyster_barba_ristorante_di_pesce_a_modena_5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#accesso div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.5%;
+}
+
+#accesso img{
+    position: relative;
+    left: -37px;
+    top: 8px;
+    width: 470px;
+}
+
+div#blocco{
+    padding: 0;
+    background-color: #006678;
+    box-shadow: 0px 8px 16px 0px rgba(0, 92, 99, 0.382);
+    border: 1px solid #006678;
+    border-radius: 10px;
+    width: 74%;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    color: white;
+}
+  
+input{
+    margin-left: 0.5em;
+}
+
+.error{
+    color: #d01b2d;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+input[type='submit']{
+    color: white;
+    border: 0;
+    padding: 4px 8px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(110, 194, 222);
+    cursor: pointer;
+    font-family: "Poppins", Helvetica;
+    text-shadow: 1px 1px 1px #000;
+}
+
+@media (max-width: 750px){
+    body{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    #accesso img{
+        width: 402px;
+        left: -32px;
+    }
+
+    #accesso div{
+        padding-top: 15%;
+    }
+
+    div#blocco{
+        padding: 0;
+        width: 82%;
+    }
+}
+
+@media (max-width: 500px){
+    #accesso img{
+        position: relative;
+        left: -21px;
+        top: 8px;
+        width: 267px;
+    }
+
+    #accesso div{
+        padding-top: 35%;
+    }
+
+    div#blocco{
+        padding: 0;
+        width: 72%;
+    }
+
+    input[type='submit']{
+        padding: auto;
+        margin-left: 90px;
+    }
+
+    label{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input{
+        margin-left: 0;
+    }
+}

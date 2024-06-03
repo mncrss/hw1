@@ -1,0 +1,362 @@
+body{
+    margin: 0px;
+    font-family: "Poppins", Helvetica;
+    font-size: 19px;
+    color: #090904;
+    text-align: center;
+    font-weight: 500;
+}
+
+#navigazione{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 70px 0px 70px;
+}
+
+#tendina.hidden{
+    display: none;
+}
+
+.info a{
+    color: #090904;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 72px 10px;
+}
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #090904;
+    text-align: left;
+}
+
+.info img{
+    height: 18px;
+    width: 18px;
+    padding: 0px 10px;
+}
+
+.info a:hover{
+    color: gray;
+    background-color: rgba(0, 102, 120, 0.15);
+    font-weight: bold;
+}
+
+#tendina.hidden{
+    display: none;
+}
+
+#profile{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#riga{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sx{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #c7c7c7;
+}
+
+img.profilo{
+    object-fit: cover;
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
+
+#riga div{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#sx p{
+    text-align: left;
+    margin: 5px;
+}
+
+#sx p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #006678;
+}
+
+#dx a {
+    color: white;
+    font-size: 18px;
+    padding: 12px 35px;
+    margin-right: 15px;
+    background-color: #006678;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 26px;
+}
+
+#dx a:hover{
+    background-color: red;
+}
+
+#dx {
+    width: 78%;
+    margin-bottom: 20px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.prefe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 47%;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 1%;
+    position: relative;
+}
+  
+.prefe:hover {
+    transform: translateY(-10px);
+}
+  
+
+.prefe img{
+    width: 310px;
+}
+
+.prefe h4 {
+    font-family: 'Elsie Swash Caps', 'Helvetica';
+    margin: 15px 0;
+    font-size: 27px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+.prefe p {
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+h2{
+    font-family: "Elsie Swash Caps", Helvetica;
+    color: #006678;
+    font-size: 51px;  
+    padding: 5px 15px 10px; 
+    margin: 0;
+}
+
+button.rimuovi{
+    margin: 0;
+    font-size: 30px;
+    color: #006678;
+    background-color: white;
+    border: 1px solid white;
+    position: absolute; 
+    top: 5px;
+    right: 10px;
+    cursor: pointer; 
+}
+
+button.rimuovi:hover{
+    color: red;
+}
+
+#end{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+img.palma{
+    height: 170.36px;
+    width: 269px;
+}
+
+p.finale{
+    font-size: 20px;
+}
+
+#social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+img.lg{
+    margin: 5px;
+    height: 24px;
+    width: 24px;
+}
+
+.copyright{
+    padding: 20px 0px;
+    width: 100%;    
+    background-color: black;
+}
+
+.copyright p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.cookies p{
+    color: #2e2e2e;
+    font-size: 15px;
+    border-top: 1px solid gray;
+    padding: 20px 0px;
+    margin: 0;
+}
+
+img.whatsapp{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#tenda {
+   display: none;
+   position: relative;
+}
+
+#strisce div{
+    width: 25px;
+    height: 3px;
+    background-color: #006678;
+    margin: 5px 0px;
+    position: relative;
+    display: block;
+}
+
+#tendina {
+    position: absolute;
+    right: 0%; 
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#tendina a{
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+#tendina a:hover{
+    background-color: rgba(0, 102, 120, 0.15);
+    font-weight: bold;
+}
+
+@media (max-width: 1032px) {
+    .info {
+      display: none;
+    }
+  
+    #tenda {
+      display: block;
+    }
+}
+
+@media(max-width: 950px){
+    #profile{
+        flex-direction: column;
+    }
+
+    p, div.popup{
+        font-size: 16px;
+    }
+
+    .prefe img {
+        width: 270px;
+    }
+
+    #sx{
+        width: 100%;
+        justify-content: space-between;
+        border: 0;
+        flex-direction: row;
+    }
+
+    #dx{
+        width: 100%;
+    }
+    
+    #dx a{
+        width: auto
+    }
+
+    #riga{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 750px){
+    h2{
+        font-size: 41px;
+    }
+
+    #dx a{
+        padding: 1%;
+    }
+
+    #results{
+        flex-direction: column;
+    }
+
+    .prefe{
+        width: 100%;
+    }
+
+    .prefe img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    #navigazione{
+        margin: 5px 20px 0px;
+    }
+ 
+    #tendina a{
+        font-size: 16px;
+    }
+
+    #riga div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p, #end p, .copyright p{
+        font-size: 16px;
+    }
+}
